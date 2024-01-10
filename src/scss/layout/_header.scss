@@ -1,0 +1,53 @@
+.l-header {
+    margin-top: 50px;
+
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+
+    &__menu {
+        @include flexDesign;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        a {
+            text-decoration: none;
+
+            font-family: $font-dancing;
+            font-size: 28px;
+            font-weight: 700;
+
+            color: $header-color;
+        }
+    }
+
+    &__list {
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 40px;
+
+            li {
+                a {
+                    padding: 10px 0;
+
+                    letter-spacing: 3px;
+
+                    text-decoration: none;
+                    font-family: $font-oppins;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+
+                    color: $header-color;
+
+                    display: block;
+                }
+            }
+        }
+    }
+}

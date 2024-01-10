@@ -1,0 +1,42 @@
+.c-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #fff;
+
+    .txt-box {
+        flex: 1;
+
+        &__inner {
+            width: 475px;
+            margin: 0 auto;
+
+            h3 {
+                margin-bottom: 90px;
+
+                @include fontLatoLight50();
+            }
+
+            p {
+                margin-bottom: 60px;
+
+                @include fontOppinsRegu();
+
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .img-box {
+        flex: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+        }
+    }
+}

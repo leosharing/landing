@@ -1,0 +1,151 @@
+.mainvisual {
+    height: 900px;
+
+    background-image: url('../img/bg1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__inner {
+        height: 100%;
+
+        @include flexDesign();
+        justify-content: center;
+        @include flexDirection(column);
+        @include flexGap(35px);
+
+        h1 {
+            line-height: 1.5;
+
+            font-family: $font-lato;
+            font-size: 100px;
+            font-weight: 300;
+
+            color: $text-white;
+        }
+
+        p {
+            width: 600px;
+
+            text-align: center;
+            @include fontOppinsRegu(18px);
+
+            color: $text-white;
+        }
+    }
+}
+
+.p-bloc {
+    &--cards {
+        margin-bottom: 75px;
+    }
+
+    &--services {
+        margin-bottom: 100px;
+
+        .c-service {
+            @include flexDesign();
+            justify-content: center;
+            @include flexGap(30px);
+            flex-wrap: wrap;
+
+            &__card {
+
+                border: 1px solid #cecece;
+
+                width: calc(100% / 3 - 30px);
+
+                &__inner {
+                    padding: 60px 30px 45px;
+
+                    .icon-box {
+
+                        width: 90px;
+                        height: 90px;
+
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+
+                        border-radius: 50%;
+
+                        color: $text-white;
+                        background-color: $primary-color;
+
+                        @include flexDesign();
+                        justify-content: center;
+
+                        i {
+                            font-size: 32px;
+                        }
+                    }
+
+                    &__body {
+                        text-align: center;
+
+                        h3 {
+                            margin-bottom: 20px;
+                            @include fontLatoLight18();
+                        }
+
+                        p {
+                            @include fontOppinsRegu();
+                            font-weight: 300;
+
+                            opacity: 0.65;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    &--video {
+        margin-bottom: 85px;
+
+        height: 600px;
+
+        background: url("../img/bg2.png") center no-repeat;
+        background-size: cover;
+
+        @include flexDesign();
+
+        .video-wrap {
+
+            &__inner {
+                width: 780px;
+
+                margin: 0 auto;
+
+                text-align: center;
+
+                color: $text-white;
+
+                i {
+                    margin-bottom: 70px;
+
+                    font-size: 45px
+                }
+
+                h3 {
+                    margin-bottom: 10px;
+
+                    @include fontLatoLight35();
+                }
+
+                p {
+                    @include fontOppinsRegu();
+                }
+            }
+        }
+    }
+
+    &--feature {
+        .feature-bloc {
+            .c-card:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}

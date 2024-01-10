@@ -1,0 +1,27 @@
+/* normalize.css
+------------------------ */
+@import 'normalize.css/normalize.css';
+
+/* ==========================================================================
+  Start Foundation
+========================================================================== */
+@import "./foundation/font";
+@import "./foundation/setting";
+@import "./foundation/base";
+@import "./foundation/reset";
+
+
+/* ==========================================================================
+  Project
+========================================================================== */
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/layout";
+
+/* ==========================================================================
+  Component
+========================================================================== */
+@import "./object/component/card";
+@import "./object/component/title";
+@import "./object/component/btn";
+@import "./object/project/top";

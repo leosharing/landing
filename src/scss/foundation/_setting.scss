@@ -1,0 +1,62 @@
+$font-dancing: 'Dancing Script', cursive;
+$font-lato: 'Lato', sans-serif;
+$font-oppins: 'Poppins', sans-serif;
+
+$primary-color: #325dff;
+$bg-color: #fafafa;
+$header-color :#d9f0ff;
+
+$text-white: #fff;
+$text-black: #000;
+
+
+@mixin flexDesign() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexGap($gap1) {
+    gap: $gap1;
+}
+
+@mixin flexGap1($gap1 , $gap2) {
+    gap: $gap1 $gap2 ;
+}
+
+@mixin flexDirection($direction : row) {
+    flex-direction: $direction;
+}
+
+@mixin fontOppinsRegu($size: 16px) {
+    line-height: 25px;
+
+    font-family: $font-oppins;
+    font-size: $size;
+    font-weight: normal;
+}
+
+@mixin fontLatoLight50() {
+    line-height: 67px;
+
+    font-family: $font-lato;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+@mixin fontLatoLight18() {
+    letter-spacing: 1px;
+
+    line-height: 25px;
+
+    font-family: $font-lato;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@mixin fontLatoLight35() {
+    line-height: 47px;
+
+    font-family: $font-lato;
+    font-size: 35px;
+    font-weight: 300;
+}

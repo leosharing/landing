@@ -1,0 +1,16 @@
+.c-title {
+    margin-bottom: 70px;
+
+    text-align: center;
+
+    h3 {
+        margin-bottom: 10px;
+        @include fontLatoLight35();
+    }
+
+    p {
+        @include fontOppinsRegu();
+
+        opacity: 0.65;
+    }
+}

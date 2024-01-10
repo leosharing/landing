@@ -1,0 +1,11 @@
+.l-ft {
+    &__bottom {
+        padding: 60px 0;
+
+        text-align: center;
+        @include fontOppinsRegu(20px);
+
+        color: rgba(255, 255, 255, 0.5);
+        background-color: $primary-color;
+    }
+}
